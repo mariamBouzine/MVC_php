@@ -1,0 +1,17 @@
+<?php 
+include 'Prof.php';
+//$p = new Prof();
+// $p->id=8;
+// $p->nom="alami";
+// $p->prenom="fatima";
+// $p->specialite="math";
+// $p=Prof::find(7);
+// $p->nom="alami";
+// $p->prenom="fatima";
+// $p->save();
+$res=Prof::All();
+// var_dump($res);
+foreach($res as $val){
+    echo $val->id." ". $val->nom." ".$val->prenom." ".$val->specialite."<br>";
+
+}
